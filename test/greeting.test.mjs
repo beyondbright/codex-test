@@ -10,3 +10,7 @@ test("greets a named user", () => {
 test("uses a guest fallback", () => {
   assert.equal(greeting(), "Hello, Guest!");
 });
+
+test("supports an enthusiastic greeting", () => {
+  assert.equal(greeting("Walter", { enthusiastic: true }), "Hello, Walter!!");
+});
