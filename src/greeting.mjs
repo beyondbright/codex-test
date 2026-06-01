@@ -1,3 +1,3 @@
-export function greeting(name = "Guest") {
-  return `Hello, ${name}!`;
+export function greeting(name = "Guest", { enthusiastic = false } = {}) {
+  return `Hello, ${name}${enthusiastic ? "!!" : "!"}`;
 }
